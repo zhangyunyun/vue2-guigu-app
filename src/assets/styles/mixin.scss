@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin pct($pct) {
+  width: #{$pct};
+  position: relative;
+  margin: 0 auto;
+}
+
+@mixin triangle($width, $height, $color, $direction) {
+  $width: $width/2;
+  $color-border-style: $height solid $color;
+  $transparent-border-style: $width solid transparent;
+  height: 0;
+  width: 0;
+
+  @if $direction==up {
+    border-bottom: $color-border-style;
+    border-left: $transparent-border-style;
+    border-right: $transparent-border-style;
+  }
+
+  @else if $direction==right {
+    border-left: $color-border-style;
+    border-top: $transparent-border-style;
+    border-bottom: $transparent-border-style;
+  }
+
+  @else if $direction==down {
+    border-top: $color-border-style;
+    border-left: $transparent-border-style;
+    border-right: $transparent-border-style;
+  }
+
+  @else if $direction==left {
+    border-right: $color-border-style;
+    border-top: $transparent-border-style;
+    border-bottom: $transparent-border-style;
+  }
+}
+@mixin bg($bg){
+  background:$bg;
+}
+
+@mixin btn($width,$height,$bg,$color,$fontSize,$radius){
+  width:$width;
+  height:$height;
+  color: $color;
+  background: $bg;
+  font-size: $fontSize;
+  border-radius:$radius;
+}
+
+
+//根据像素比缩放1px像素边框
+@media only screen and (-webkit-device-pixel-ratio:2){
+  .border-1px{
+    &::before{
+      transform:scaleY(.5)
+    }
+  }
+}
+
+@media only screen and (-webkit-device-pixel-ratio:3){
+  .border-1px{
+    &::before{
+      transform:scaleY(.333333)
+    }
+  }
+}
+
+//根据像素比来使用 2x图 3x图
+@mixin bg-image($url){
+  background-image: url($url + "@2x.png");
+  @media(-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3){
+    background-image: url($url + "@3x.png");
+  }
+}
+

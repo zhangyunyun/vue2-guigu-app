@@ -1,0 +1,107 @@
+{
+  "id": "1760132",
+  "name": "guigu-app",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "122721",
+      "name": "account",
+      "font_class": "account",
+      "unicode": "e6b8",
+      "unicode_decimal": 59064
+    },
+    {
+      "icon_id": "310697",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "1177791",
+      "name": "order form",
+      "font_class": "orderform",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "2150386",
+      "name": "搜索",
+      "font_class": "search_icon",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "563538",
+      "name": "shop1",
+      "font_class": "shop1",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "1321266",
+      "name": "arrow",
+      "font_class": "arrow",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "5466007",
+      "name": "arrow",
+      "font_class": "arrow1",
+      "unicode": "e70a",
+      "unicode_decimal": 59146
+    },
+    {
+      "icon_id": "3750433",
+      "name": "Phone",
+      "font_class": "Phone",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "1069079",
+      "name": "赚积分",
+      "font_class": "weibiaoti20101010101",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "2352746",
+      "name": "service",
+      "font_class": "service",
+      "unicode": "e744",
+      "unicode_decimal": 59204
+    },
+    {
+      "icon_id": "420542",
+      "name": "iconfont-cardid",
+      "font_class": "iconfontcardid",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "4640923",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "1768042",
+      "name": "减号",
+      "font_class": "jianhao",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "3510687",
+      "name": "加号",
+      "font_class": "jiahao",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    }
+  ]
+}
