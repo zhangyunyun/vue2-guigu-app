@@ -9,9 +9,9 @@
         <router-link to="/shop/ratings">评价</router-link>
       </div>
       <div class="tab-item">
-        <router-link to="/shop/info">商家1</router-link>
+        <router-link to="/shop/info">商家12</router-link>
       </div>
-    </div>
+    </div
     <keep-alive>
       <router-view></router-view>
     </keep-alive>
